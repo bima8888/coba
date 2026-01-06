@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #c1121f;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: #c1121f;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #a50f1a;
+}
+
+.btn-outline {
+  border: 2px solid #c1121f;
+  color: #c1121f;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-outline:hover {
+  background: #c1121f;
+  color: #fff;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background: #c1121f;
+  display: block;
+  margin-top: 8px;
+}
+
+/* ABOUT */
+.about p {
+  max-width: 700px;
+}
+
+/* SKILLS */
+.skills {
+  background: #f9f9f9;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  font-weight: 600;
+}
+
+/* PORTFOLIO */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.portfolio-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.portfolio-img {
+  height: 160px;
+  background: #eee;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.portfolio-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.portfolio-links a {
+  text-decoration: none;
+  color: #c1121f;
+  font-weight: 600;
+}
+
+/* EXPERIENCE */
+.experience {
+  background: #f9f9f9;
+}
+
+.experience ul {
+  list-style: none;
+}
+
+.experience li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.experience li::before {
+  content: '•';
+  color: #c1121f;
+  position: absolute;
+  left: 0;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  background: #fff;
+}
+
+.cta p {
+  margin: 15px 0 25px;
+}
+
+/* CONTACT */
+.contact p {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
